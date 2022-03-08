@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Bin Packing Algorithm</title>
+  <link href='css/Demo.css' rel='stylesheet' type='text/css' media='screen' />
+</head>
+
+<body>
+  <div class="head1">
+    <h1>Policz kaseton</h1>
+    <p><strong>Wpisuj rozmiar kasetonów od największego do najmniejszego! </strong></p>
+  </div>
+  <div>
+    <div id="settings">
+
+      <div class='examples'>
+        <label for='examples'>Wymiary: </label>
+        <select id='examples'>
+          <option value='simple'> centymetry</option>
+        </select>
+      </div>
+
+      <div class='blocks'>
+        <p class="kaseton a"><strong>Rozmiary kasetonów:</strong></p>
+        <span class='example'>
+          <div class="adhd c">
+            <strong>szerokość&nbsp;<br /> x&nbsp;<br />wysokość<br />&nbsp;<br />[x&nbsp;ilość]</strong>
+          </div>
+        </span></label>
+        <textarea id='blocks' rows=12 class="b"></textarea>
+      </div>
+
+      <div class='size'>
+        <label for='size'>rozmiar: </label>
+        <div class="margines">
+          <select id='size'>
+            <option class="kolor">260x1000</option>
+            <option class="kolor">320x1000</option>
+          </select>
+        </div>
+      </div>
+
+      <div class='sort'>
+        <b>SORTUJĘ NA SZEROKOŚĆ</b>
+      </div>
+
+      <div class='color'>
+        <label for='color'>kolor: </label>
+        <select id='color'>
+          <option>czarny</option>
+          <option>pastel</option>
+        </select>
+      </div>
+      <div class="ratio">
+        Filled: <span id='ratio'>0</span>%
+      </div>
+
+      <div id="nofit" class="nofit">
+      </div>
+
+      <div id="metry">
+        <span>
+          Ilość MB/ 1 sztukę: <br><span class="metr"></span>
+        </span>
+      </div>
+      <div id="keder">
+        Ilość MB kedera/ 1 sztukę: <br><span class="keder_ilosc"></span>
+        <span>
+        </span>
+      </div>
+    </div>
+
+    <div id="packing">
+      <canvas id="canvas">
+        <div id="unsupported">
+          Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
+        </div>
+      </canvas>
+    </div>
+
+  </div>
+
+  <script src='js/jquery.js'>        </script>
+  <script src='js/packer.js'>        </script>
+  <!-- <script src='js/packer.growing.js'></script> -->
+  <script src='js/Demo.js'>          </script>
+
+</body>
+
+</html>
