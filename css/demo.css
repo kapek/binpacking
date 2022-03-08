@@ -1,0 +1,162 @@
+* {
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  text-shadow: grey 2px 1px;
+}
+body {
+  margin: auto;
+  max-width: 700px;
+  text-align: center;
+  min-width: 560px;
+}
+
+
+
+/* KOLORY TŁA */
+
+
+
+body {
+  background-color: #262626;
+}
+.head1,
+#canvas {
+  background-color: #404040;
+}
+#settings {
+  background-color: #8c8484;
+}
+textarea,
+.nofit,
+.adhd,
+.size,
+.sort,
+.color,
+.examples,
+ratio,
+#keder,
+#metry {
+  background-color: #5d7373;
+}
+select {
+  background-color: #465759;
+}
+
+
+ /*  USTAWIENIA  */
+
+
+.head1 {
+  margin-bottom: 1em;
+  padding: 2em;
+}
+#keder,
+#metry {
+  margin-bottom: 1em;
+  padding: 2em;
+}
+#settings {
+  padding: 1em;
+  float: left;
+  border: none;
+  width: 45%;
+}
+.adhd {
+  min-height: 184px;
+  min-width: 125px;
+  margin-bottom: 1em;
+}
+#settings .size,
+.sort,
+.color,
+.examples {
+  margin-bottom: 1em;
+  min-width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.kaseton {
+  margin-top: 1em;
+}
+#settings .ratio {
+  clear: both;
+  padding: 1em;
+  display: none;
+}
+#settings .nofit {
+  display: none;
+  margin-top: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+#canvas {
+  float: right;
+  width: 50%;
+}
+textarea {
+  resize: none;
+  max-width: 125px;
+  margin-bottom: 1em;
+  text-align: center;
+  outline: none;
+  margin-right: 1px;
+}
+textarea:focus {
+  animation-name: color;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+select {
+  width: 8em;
+  outline: none;
+}
+option,
+select {
+  padding: 5px;
+}
+.size,
+.color,
+.sort,
+.examples {
+  display: flex;
+  justify-content: space-around;
+}
+.margines {
+  margin-left: 30px;
+}
+.blocks {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  max-width: 300px;
+}
+.a {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.b {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.c {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+@keyframes color {
+  0% {
+    background-color: #262626;
+  }
+  50% {
+    background-color: #006663;
+  }
+  100% {
+    background-color: #262626;
+  }
+}
